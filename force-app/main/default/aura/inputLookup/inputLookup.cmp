@@ -1,0 +1,90 @@
+<aura:component controller="InputLookupCtrl" implements="lightning:isUrlAddressable">
+    
+    <!-- EXAMPLE -->
+    <!--<c:inputLookup selectedRecord="{!v.selectedRecord}" sobjectDeveloperName="Account" sobjectLabel="Account" fieldLabel="Account" iconName="standard:account"/>-->
+    
+    <!-- TESTING URL -->
+    <!-- https://....lightning.force.com/lightning/cmp/c:inputLookup -->
+
+    <!-- PUBLIC ATTRIBUTES -->
+    <aura:attribute name="selectedRecord" type="Object" required="true" access="public" default=""/>
+    <aura:attribute name="sobjectDeveloperName" type="String" required="true" access="public" default="Account"/>
+    <aura:attribute name="sobjectLabel" type="String" access="public" default="{!v.sobjectDeveloperName}"/>
+    <aura:attribute name="fieldLabel" type="String" access="public" default=""/>
+    <aura:attribute name="iconName" type="String" access="public" default="standard:account"/>
+    <aura:attribute name="placeholder" type="String" access="public" default="Search..."/>
+    <aura:attribute name="queryWhereCondition" type="String" access="public" default=""/>
+    <aura:attribute name="queryLimit" type="Integer" required="true" access="public" default="5"/>
+    <aura:attribute name="showRecents" type="Boolean" access="public" default="false"/>
+    
+    <!-- PRIVATE ATTRIBUTES -->
+    <aura:attribute name="searchString" type="String" access="private"/>
+    <aura:attribute name="results" type="Object[]" access="private"/>
+    <aura:attribute name="recents" type="Object[]" access="private"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <div class="slds-form-element" id="outer">
+        <aura:if isTrue="{!v.fieldLabel}">
+            <label class="slds-form-element__label">{!v.fieldLabel}</label>
+        </aura:if>
+        <div class="slds-form-element__control">
+            <div aura:id="container" class="slds-combobox_container slds-has-inline-listbox">
+                <div aura:id="dropdown" class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-combobox-lookup" aria-expanded="true" aria-haspopup="listbox" role="combobox">
+                    
+                    <aura:if isTrue="{!v.selectedRecord}">
+                        
+                        <!-- SELECTED RECORD -->
+                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left-right" role="none">
+                            <span class="slds-icon_container slds-combobox__input-entity-icon" title="{!v.sobjectLabel}">
+                                <lightning:icon iconName="{!v.iconName}" size="small"/>
+                                <span class="slds-assistive-text">{!v.sobjectLabel} {!v.selectedRecord.Name}</span>
+                            </span>
+                            <input type="text" class="slds-input slds-combobox__input slds-combobox__input-value" aria-autocomplete="list" aria-controls="listbox-unique-id" autocomplete="off" role="textbox" placeholder="{!v.placeholder}" readonly="true" value="{!v.selectedRecord.Name}"/>
+                            <button class="slds-button slds-button_icon slds-input__icon slds-input__icon_right" title="Remove" onclick="{!c.revoveSelected}">
+                                <lightning:icon iconName="utility:close" size="x-small"/>
+                                <span class="slds-assistive-text">Remove</span>
+                            </button>
+                        </div>
+
+                        <!-- NOT SELECTED RECORD -->
+                        <aura:set attribute="else">
+                            <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                                <input value="" type="text" class="slds-input slds-combobox__input" aria-autocomplete="list" aria-controls="listbox-unique-id" autocomplete="off" role="textbox" placeholder="{!v.placeholder}" onkeyup="{!c.keyupInput}" onfocus="{!c.focusInput}" onblur="{!c.blurInput}"/>
+                                <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+                                    <lightning:icon iconName="utility:search" size="x-small"/>
+                                </span>
+                            </div>
+                        </aura:set>
+                    </aura:if>
+
+                    <!-- AUTOCOMPLETE RESULTS -->
+                    <div role="listbox">
+                        <ul class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid" role="presentation">
+                            <aura:iteration items="{!v.results}" var="result">
+                                <li role="presentation" class="slds-listbox__item" onclick="{!c.selectResult}" data-id="{!result.Id}">
+                                    <div class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta" role="option">
+                                        <span class="slds-media__figure">
+                                            <span class="slds-icon_container" title="{!v.sobjectLabel}">
+                                                <lightning:icon iconName="{!v.iconName}" size="small"/>
+                                                <span class="slds-assistive-text">{!v.sobjectLabel}</span>
+                                            </span>
+                                        </span>
+                                        <span class="slds-media__body">
+                                            <span class="slds-listbox__option-text slds-listbox__option-text_entity">
+                                                <aura:unescapedHtml value="{!result.Highlight}"/>
+                                            </span>
+                                            <span class="slds-listbox__option-meta slds-listbox__option-meta_entity">
+                                                {!v.sobjectLabel}
+                                            </span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </aura:iteration>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,222 @@
+[
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1530223140171,
+            "changeTime": 1530223140171,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main",
+            "isDirectory": true,
+            "size": 96,
+            "modifiedTime": 1530223140171,
+            "changeTime": 1530223140171,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default",
+        {
+            "state": "u",
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 128,
+            "modifiedTime": 1530228698714,
+            "changeTime": 1530228698714,
+            "contentHash": "78dd78c06e81fd7afb457ecdb5af8fae5546e0a3"
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura",
+            "isDirectory": true,
+            "size": 128,
+            "modifiedTime": 1530226145952,
+            "changeTime": 1530226145952,
+            "contentHash": "4ac7da8fd7c6b5e4d62e94caad0b9cb024853bd0",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/inputLookup",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/inputLookup",
+            "isDirectory": true,
+            "size": 192,
+            "modifiedTime": 1530225826724,
+            "changeTime": 1530225826724,
+            "contentHash": "f97ad2a6ed18cc769972b2ba0fd0949e878d4797",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/inputLookup/inputLookup.cmp",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/inputLookup/inputLookup.cmp",
+            "isDirectory": false,
+            "size": 6336,
+            "modifiedTime": 1530227783737,
+            "changeTime": 1530227783737,
+            "contentHash": "a7db6e026df22344a9289d26d5b384b80fb9258b",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/inputLookup/inputLookup.cmp-meta.xml",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/inputLookup/inputLookup.cmp-meta.xml",
+            "isDirectory": false,
+            "size": 243,
+            "modifiedTime": 1530225328634,
+            "changeTime": 1530225328634,
+            "contentHash": "858e134fffae00c53cda4110fb274af3710b8a28",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/inputLookup/inputLookupController.js",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/inputLookup/inputLookupController.js",
+            "isDirectory": false,
+            "size": 1695,
+            "modifiedTime": 1530225954656,
+            "changeTime": 1530225954656,
+            "contentHash": "5744024b5ecabf9b6cd07b2b70f92cf24154372b",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/inputLookup/inputLookupHelper.js",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/inputLookup/inputLookupHelper.js",
+            "isDirectory": false,
+            "size": 4026,
+            "modifiedTime": 1530225963527,
+            "changeTime": 1530225963527,
+            "contentHash": "5f203a480bb127345c27b31fdeefaef14145dccf",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup",
+            "isDirectory": true,
+            "size": 288,
+            "modifiedTime": 1530225660263,
+            "changeTime": 1530225660263,
+            "contentHash": "482aba1731d0a586e52ba05892f68b26d69ba4fe",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/classes/InputLookupCtrl.cls-meta.xml",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/classes/InputLookupCtrl.cls-meta.xml",
+            "isDirectory": false,
+            "size": 174,
+            "modifiedTime": 1530225896993,
+            "changeTime": 1530225896993,
+            "contentHash": "0bfc8bc49e53c8f0f6b207cf675766c0d6546ee5",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/classes/InputLookupCtrl.cls",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/classes/InputLookupCtrl.cls",
+            "isDirectory": false,
+            "size": 994,
+            "modifiedTime": 1530228480090,
+            "changeTime": 1530228480090,
+            "contentHash": "572ac38a57165199cf1389e3708b236ecf97f65e",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/classes",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/classes",
+            "isDirectory": true,
+            "size": 192,
+            "modifiedTime": 1530228613184,
+            "changeTime": 1530228613184,
+            "contentHash": "99bf7089b9322997ff2eed8cfff143d8fc5a32ca",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/App",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/aura/App",
+            "isDirectory": true,
+            "size": 64,
+            "modifiedTime": 1530226887897,
+            "changeTime": 1530226887897,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/classes/InputLookupCtrlTest.cls-meta.xml",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/classes/InputLookupCtrlTest.cls-meta.xml",
+            "isDirectory": false,
+            "size": 174,
+            "modifiedTime": 1530228613184,
+            "changeTime": 1530228613184,
+            "contentHash": "0bfc8bc49e53c8f0f6b207cf675766c0d6546ee5",
+            "isMetadataFile": true,
+            "state": "u"
+        }
+    ],
+    [
+        "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/classes/InputLookupCtrlTest.cls",
+        {
+            "sourcePath": "/Users/rlacontana/Documents/sfdx/sfdx-InputLookup/force-app/main/default/classes/InputLookupCtrlTest.cls",
+            "isDirectory": false,
+            "size": 349,
+            "modifiedTime": 1530228613184,
+            "changeTime": 1530228613184,
+            "contentHash": "72fa8da068a71b2692779ff02577b87af6312866",
+            "isMetadataFile": false,
+            "state": "u"
+        }
+    ]
+]
