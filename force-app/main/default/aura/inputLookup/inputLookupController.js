@@ -2,14 +2,14 @@
     doInit : function(component, event, helper) {
         // Listen for all clicks on the document
         document.addEventListener('click', function (event) {
-        if(event.target != null){
-            if (!event.target.closest('.slds-listbox__item')) {
-                console.log('outside');
-                helper.closeDropdown(component);
-            } else{
-                console.log('inside');
+            if(event.target != null){
+                if (!event.target.closest('.slds-listbox') || !event.target.closest('.slds-listbox__item') || !event.target.closest('.slds-listbox__option-text') || !event.target.closest('.slds-listbox__option-text_entity')) {
+                    console.log('outside');
+                    helper.closeDropdown(component);
+                } else{
+                    console.log('inside');
+                }
             }
-        }
         }, false);
     },
 
